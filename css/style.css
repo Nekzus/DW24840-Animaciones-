@@ -19,7 +19,6 @@ header {
   align-items: center;
   background-image: linear-gradient(to left, #12181B, #2A2E35);
   padding: 10px;
-  color: white;
 }
 
 header a {
@@ -27,8 +26,7 @@ header a {
   text-decoration: none;
 }
 
-.titleSite,
-.subtitleSite {
+.titleSite {
   font-family: "Cubano", sans-serif;
   font-weight: 400;
 }
@@ -112,7 +110,7 @@ main {
 .subtitle {
   grid-area: subtitle;
   color: #151B1E;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #9166CC;
 }
 
@@ -162,6 +160,11 @@ main {
   width: min(300px, 100%);
 }
 
+.productCard:hover {
+  box-shadow: 5px 5px 20px black;
+  transform: translateY(-3%);
+}
+
 .productCard>img {
   width: 100%;
 }
@@ -191,7 +194,7 @@ p {
 }
 
 .btnSubmit {
-  background-color: #FB7E46;
+  background-color: #498AFB;
   color: white;
   font-size: 1rem;
   border: none;
@@ -236,6 +239,9 @@ p {
 
 .subtitleForm {
   grid-area: subtitleForm;
+  color: #151B1E;
+  padding: 0.5rem;
+  background-color: #9166CC;
 }
 
 .formGroup {
@@ -303,6 +309,10 @@ textarea {
 
 .subtitleVideo {
   grid-area: subtitleVideo;
+  margin: 2rem;
+  color: #151B1E;
+  padding: 0.5rem;
+  background-color: #9166CC;
 }
 
 .videoContainer {
@@ -311,6 +321,10 @@ textarea {
 
 .subtitleMap {
   grid-area: subtitleMap;
+  margin: 2rem;
+  color: #151B1E;
+  padding: 0.5rem;
+  background-color: #9166CC;
 }
 
 .mapContainer {
