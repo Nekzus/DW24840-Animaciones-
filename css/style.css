@@ -7,7 +7,7 @@
 
 /**** BODY ****/
 body {
-  background-color: rgb(104, 102, 102);
+  background-image: linear-gradient(to top, #12181B, #2A2E35);
   color: white;
 }
 
@@ -17,7 +17,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(39, 38, 38);
+  background-image: linear-gradient(to left, #12181B, #2A2E35);
   padding: 10px;
   color: white;
 }
@@ -27,7 +27,8 @@ header a {
   text-decoration: none;
 }
 
-.titleSite {
+.titleSite,
+.subtitleSite {
   font-family: "Cubano", sans-serif;
   font-weight: 400;
 }
@@ -37,7 +38,7 @@ header a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgb(66, 64, 64);
+  background-image: linear-gradient(#12181B, #2A2E35);
 }
 
 .welcomeSlider {
@@ -48,7 +49,7 @@ header a {
 
 /**** NAVBAR ****/
 .navbar {
-  background-color: black;
+  background-color: #2A2E35;
   font-family: "Cubano", sans-serif;
   font-weight: 400;
   opacity: 0.8;
@@ -60,12 +61,10 @@ header a {
 }
 
 .listInline {
-  height: 100%;
   display: flex;
-  text-align: center;
+  align-items: center;
   list-style-type: none;
   overflow: hidden;
-  height: 100%;
   max-width: 120rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -74,8 +73,16 @@ header a {
 .listInline>li a {
   display: block;
   text-align: center;
+  padding: 0.5rem;
   text-decoration: none;
   color: white;
+}
+
+.listInline>li a:hover {
+  padding: 0.5rem;
+  transform: translateY(-3%);
+  color: #2A2E34;
+  background-color: #25E35F;
 }
 
 /**** MAIN ****/
@@ -92,7 +99,7 @@ main {
   align-items: center;
   row-gap: 2rem;
   column-gap: 2rem;
-  background-color: rgb(66, 64, 64);
+  background-image: linear-gradient(#12181B, #2A2E35);
   margin: 2rem;
   padding: 1rem;
   color: white;
@@ -104,6 +111,9 @@ main {
 
 .subtitle {
   grid-area: subtitle;
+  color: #151B1E;
+  padding: 1rem;
+  background-color: #9166CC;
 }
 
 .contentSubtitle {
@@ -141,13 +151,14 @@ main {
   justify-content: space-between;
   align-items: center;
   row-gap: 1rem;
-  background-color: rgb(49, 48, 48);
+  background-image: linear-gradient(to top, #12181B, #2A2E35);
   padding: 2rem;
   border-radius: 0.5rem;
   color: white;
   font-family: "Sofia Pro", sans-serif;
   font-size: 1.2rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
   width: min(300px, 100%);
 }
 
@@ -162,7 +173,7 @@ p {
 
 .btnAddcart {
   text-transform: uppercase;
-  background-color: black;
+  background-color: #498AFB;
   color: white;
   font-family: "Sofia Pro", sans-serif;
   border: none;
@@ -173,8 +184,14 @@ p {
   cursor: pointer;
 }
 
+.btnAddcart:hover {
+  background-color: #25E35F;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3%);
+}
+
 .btnSubmit {
-  background-color: black;
+  background-color: #FB7E46;
   color: white;
   font-size: 1rem;
   border: none;
@@ -185,11 +202,17 @@ p {
   border-radius: 0.5rem;
 }
 
+.btnSubmit:hover {
+  background-color: #25E35F;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3%);
+}
+
 .container {
   display: flex;
   flex-direction: column;
   margin: 5rem;
-  background-color: rgb(66, 64, 64);
+  background-image: linear-gradient(#12181B, #2A2E35);
   padding: 5rem;
   border-radius: 0.5rem;
 }
@@ -201,7 +224,7 @@ p {
     "subtitleForm"
     "form";
   gap: 1rem;
-  background-color: rgb(66, 64, 64);
+  background-image: linear-gradient(#12181B, #2A2E35);
   margin: 2rem;
   padding: 1rem;
   color: white;
@@ -219,7 +242,7 @@ p {
   grid-area: form;
   display: flex;
   flex-direction: column;
-  background-color: rgb(49, 48, 48);
+  background-image: linear-gradient(to top, #12181B, #2A2E35);
   border-radius: 1rem;
   width: min(40rem, 100%);
   height: 100%;
@@ -303,7 +326,7 @@ iframe {
 
 /**** FOOTER ****/
 .footerCopyright {
-  background-color: rgb(39, 38, 38);
+  background-color: #13191C;
   padding: 1.5rem;
   text-align: center;
   color: white;
@@ -313,7 +336,7 @@ iframe {
 
 .footerSocials {
   text-align: center;
-  background-color: rgb(77, 77, 77);
+  background-color: #202429;
   padding: 2rem;
   color: white;
   font-family: "Sofia Pro", sans-serif;
@@ -457,6 +480,7 @@ iframe {
   }
 
   .listInline {
+    height: 2rem;
     flex-direction: row;
     justify-content: space-evenly;
   }
